@@ -6,7 +6,7 @@
 }
 
 :root{
-    --transition: all 0.3s ease-out;
+    --transition: all 3s ease-out;
     --primary-color: rgb(0, 255, 255);
     --secondary-color: rgb(0, 207, 235);
     --hover-1: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), var(--primary-color));
@@ -30,13 +30,14 @@ body{
 } */
 
 .logo{
-    height: 3.45rem;
+    /* width: 7rem; */
+    height: 4.5rem;
     /* border-radius: 10px; */
-    padding: 0.5rem;
+    padding: 0.2rem 0.2rem;
     border: 3px solid;
-    border-image: linear-gradient( 90deg,var(--primary-color), white, white)  1;
+    border-image: linear-gradient( to bottom,var(--primary-color), white, white)  1;
     cursor: pointer;
-    font-size: 19px;
+    font-size: 18px;
     transition: var(--transition);
 }
 
@@ -51,6 +52,7 @@ body{
 
 .name{
     text-shadow: 3px 0px 5px var(--primary-color);
+    display: block;
 }
 
 .small-nav{
@@ -60,8 +62,9 @@ body{
 }
 
 .nav-btn{
-    width: 3rem;
-    height: 2.4rem;
+    width: 2rem;
+    height: 2rem;
+    /* padding-bottom: 1rem; */
     background: linear-gradient(90deg,var(--primary-color), rgb(0, 255, 255),white);
     border: none;
     border-radius: 3px;
@@ -71,12 +74,12 @@ body{
     transition: var(--transition);
 }
 
-.nav-btn:hover{
-    background:  var(--hover-2);
+.fa-align-justify{
+    font-size: 1rem;
 }
 
-.xmark{
-    overflow: hidden;
+.nav-btn:hover{
+    background:  var(--hover-2);
 }
 
 .nav-links{
