@@ -108,18 +108,53 @@ body{
     background: var(--hover-1)
 }
 
-.lower{
+main{
     display: flex;
     justify-content: center;
     margin-top: 4rem;
+    min-height: calc(100vh - (13rem));
 }
 
 .box{
     width: 90vw;
-    height: 1000px;
+    height: auto;
     border-radius: 15px;
     border: 0.1px solid white;
     padding: 1rem;
+}
+
+footer{
+    margin-top: 2rem;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    /* background-color: black; */
+}
+
+footer p{
+    margin-bottom: 0.5rem;
+}
+
+.fa-github, .fa-linkedin{
+    font-size: 2.5rem;
+}
+
+.fa-github{
+    margin-right: 2rem;
+    /* color: black; */
+}
+
+.fa-linkedin{
+    color: blue;
+}
+
+.f-name{
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 1.5rem;
 }
 
 @media  screen and (min-width: 712px) {
@@ -163,6 +198,13 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    footer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 4rem;
     }
 
 }
