@@ -1,0 +1,33 @@
+.box {
+    width: 90vw;
+    height: auto;
+    border-radius: 15px;
+    border: 0.1px solid white;
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box article{
+    text-align: center;
+}
+
+.box article h1{
+    font-size: 8rem;
+}
+.box article p{
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 960px) {
+    .box article h1 {
+        font-size: 10rem;
+    }
+    
+    .box article p {
+        font-size: 2.8rem;
+    }
+}
