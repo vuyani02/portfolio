@@ -62,12 +62,12 @@ body{
 }
 
 .nav-btn{
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.3rem;
     /* padding-bottom: 1rem; */
-    background: linear-gradient(90deg,var(--primary-color), rgb(0, 255, 255),white);
-    border: none;
-    border-radius: 3px;
+    background: linear-gradient(to right, var(--primary-color), var(--primary-color), rgba(255, 255, 255, 0));
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
     font-size: 1.5rem;
     margin-right: 0.5rem;
     cursor: pointer;
@@ -79,6 +79,7 @@ body{
 
 .nav-btn:hover{
     background:  var(--hover-2);
+    border: none;
 }
 
 .nav-links{
@@ -113,15 +114,16 @@ main{
     justify-content: center;
     margin-top: 4rem;
     min-height: calc(100vh - (13rem));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.box{
+/* .box{
     width: 90vw;
     height: auto;
     border-radius: 15px;
     border: 0.1px solid white;
     padding: 1rem;
-}
+} */
 
 footer{
     margin-top: 2rem;
@@ -155,6 +157,12 @@ footer p{
     color: var(--primary-color);
     font-weight: 900;
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 510px) {
+    main {
+        min-height: calc(100vh - (18rem));
+    }
 }
 
 @media  screen and (min-width: 712px) {
