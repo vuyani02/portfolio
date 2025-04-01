@@ -125,7 +125,7 @@ main{
     padding: 1rem;
 } */
 
-footer{
+.footer-content{
     margin-top: 2rem;
     border-top: 1px solid white;
     display: flex;
@@ -136,7 +136,7 @@ footer{
     /* background-color: black; */
 }
 
-footer p{
+.footer-content p{
     margin-bottom: 0.5rem;
 }
 
@@ -151,6 +151,18 @@ footer p{
 
 .fa-linkedin{
     color: blue;
+}
+
+.fa-circle-up{
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fa-circle-up:hover{
+    color: rgba(0, 255, 255, 0.5);
 }
 
 .f-name{
@@ -208,7 +220,7 @@ footer p{
         justify-content: space-between;
     }
 
-    footer{
+    .footer-content{
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
