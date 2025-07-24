@@ -39,6 +39,9 @@ body{
     border-image: linear-gradient( to bottom,var(--primary-color), white, white)  1;
     cursor: pointer;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo:hover{
@@ -48,11 +51,13 @@ body{
 .l-name{
     color: var(--primary-color);
     text-shadow: 3px 0px 5px white;
+    font-size: 27px;
 }
 
 .name{
     text-shadow: 3px 0px 5px var(--primary-color);
     display: block;
+    font-size: 27px;
 }
 
 .small-nav{
